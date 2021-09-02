@@ -14,3 +14,7 @@ end
 20.times do
   Book.create name: Faker::Book.title
 end
+
+Book.first(5).each do |book|
+  book.lents.create
+end

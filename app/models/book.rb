@@ -1,3 +1,3 @@
 class Book < ApplicationRecord
-  has_many :lents
+  has_many :lends
 end
