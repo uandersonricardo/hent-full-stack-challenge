@@ -64,6 +64,6 @@ class LendsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def lend_params
-      params.fetch(:lend, {})
+      params.fetch(:lend, {}).permit(:book_id)
     end
 end
