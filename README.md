@@ -2,11 +2,11 @@
 
 Essa é uma atividade parte do processo de contratação da Hent. 
 
-Para eventuais dúvidas entre em contato com o recrutador da Hent.
+Para eventuais dúvidas entre em contato com o recrutador.
 
 ## Como utilizar esse projeto
 
-Esse é um projeto exemplo feito em ruby on rails. Para enviar sua proposta de projeto, deve feito um fork desse projeto no github e compartilhado a equipe da Hent.
+Esse é um projeto exemplo feito em ruby on rails. Para enviar sua proposta de projeto, deve feito um fork desse projeto no github e compartilhado com a equipe da Hent.
 
 Além de compartilhar o código no github, o projeto deverá ser apresentado em uma aplicação no Heroku.
 
@@ -23,9 +23,7 @@ Preferencialmente utilizar a versão mais recente do ruby (2.7.4). Sugiro fazer 
 
  É sugerido utilizar postgreSQL como database, por que é o que será utilizado na aplicação no heroku, porém localmente qualquer outro banco de dados relacional pode ser utilizado. 
 
- Ao configurar o banco de dados, existem alguns dados no arquivo: `db/seed.rb`
-
-Para popular o banco de dados, use o comando:
+Já existem alguns dados no arquivo: `db/seed.rb`. Para popular o banco de dados, use o comando:
 
 `rails db:seed`
 
@@ -33,7 +31,7 @@ Mais informações em https://guides.rubyonrails.org/active_record_migrations.ht
 
 ## O Desafio
 
-Esse é sistema de biblioteca para armazenar informações sobre os livros e controlar os emprestimos.
+Esse é sistema de biblioteca para armazenar informações sobre os livros e controlar os empréstimos de livros.
 
 O sistema já tem algumas telas prontas:
 
@@ -44,7 +42,7 @@ O sistema já tem algumas telas prontas:
  - Adicionar um novo emprestimo
  - Editar um emprestimo
 
-Para essa avaliação você deve finalizar o sistema desenvolvendo os casos de uso a seguir: 
+Para essa avaliação, você deve finalizar o sistema desenvolvendo os casos de uso a seguir: 
 
 1. Incluir telas para entidade `User`
 2. Adicionar propriedades nas entidades existentes
@@ -53,7 +51,7 @@ Para essa avaliação você deve finalizar o sistema desenvolvendo os casos de u
 
 ### 1. Incluir telas para entidade `User`
 
-Incluir no as seguintes telas para o modelo de Usuário:
+Incluir no projeto as seguintes telas para o modelo de Usuário:
 
  - Listagem de usuário
  - Adicionar usuário
@@ -63,7 +61,7 @@ Incluir no as seguintes telas para o modelo de Usuário:
 
 ### 2. Adicionar propriedades nas entidades existentes
 
-Algumas entidades já foram criadas com algumas propriedades, você deverá fazer a migração de dados para incluir as que estão faltando.
+Algumas entidades já foram criadas com algumas propriedades, você deverá fazer a migração de dados para incluir as propriedades que estão faltando.
 
 Abaixo você vai encontrar as propiedades obrigatórias para cada entidade
 
@@ -73,7 +71,7 @@ Devem ter as informações: titulo e autor
 
 **Empréstimos (Lend)**
 
-Devem ter as informações: livro emprestado, data de emprestimo, data de devolução, usuário que solicitou o emprestimo
+Devem ter as informações: livro emprestado, data de empréstimo, data de devolução, usuário que solicitou o empréstimo
 
 **Usuários (User)**
 
