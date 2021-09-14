@@ -98,6 +98,8 @@ _Essa validação já está implementada no sistema. Se tiver curiosidade sobre 
 ## Considerações finais
 
 O código fonte do projeto deve ser feito totalmente em inglês.
+
+
 A rápida assimilação de um novo framework é um dos pontos avaliados nessa prova por isso apresentamos um projeto em Ruby on Rails, no entanto vamos permitir a utilização de outra linguagem para essa prova desde que:
  - Todas funcionalidades já existentes sejam atendidas
  - Faça uso de um banco de dados relacional
