@@ -77,8 +77,8 @@ Devem ter as informações: nome, e-mail e senha (encriptada)
 
 **Usuários (User)**
 
-Não pode haver mais de um usuário com o mesmo e-mail. 
-_Essa validação já está implementada no sistema. Se tiver curiosidade sobre a biblioteca (gem), acesse: https://github.com/heartcombo/devise#getting-started_
+- Não pode haver mais de um usuário com o mesmo e-mail.
+  - _Essa validação já está implementada no sistema. Se tiver curiosidade sobre a biblioteca (gem), acesse: https://github.com/heartcombo/devise#getting-started_
 
 
 ## Sobre a aplicação
@@ -102,10 +102,13 @@ Mais informações em https://guides.rubyonrails.org/active_record_migrations.ht
 
 O código fonte do projeto deve ser feito totalmente em inglês.
 
+Compartilhar o código com seguintes usuários do github:
+thiagodiniz; brunnogomes; leoadb e roque86
+
 A rápida assimilação de um novo framework é um dos pontos avaliados nessa prova por isso apresentamos um projeto em Ruby on Rails, no entanto vamos permitir a utilização de outra linguagem para essa prova desde que:
  - Todas funcionalidades já existentes sejam atendidas
  - Faça uso de um banco de dados relacional
  - Seja um projeto utilizando um framework web
- - Deploy do proejto feito no heroku ou alguma outra plataforma com deploy em git
+ - Deploy do projeto feito no heroku ou alguma outra plataforma com deploy em git
 
 Qualquer dúvida entrar em contato com a equipe da Hent.
