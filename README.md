@@ -1,33 +1,18 @@
-# Full Stack Developer Chanllege
+# Full Stack Developer Challenge
 
-Essa é uma atividade parte do processo de contratação da Hent. 
+Olá, seja bem vindo ao nosso Desafio da Hent! Essa é uma atividade que fará parte do processo seletivo.
 
-Para eventuais dúvidas entre em contato com o recrutador.
+Por favor, leia as instruções até o final. Será rápido e lhe ajudará a ter possíveis escolhas de como trabalhar o projeto.
+
+Para eventuais dúvidas entre em contato com o recrutador. Ficaremos felizes em ajudá-lo!
 
 ## Como utilizar esse projeto
 
-Este é um projeto exemplo feito em Ruby on Rails. Para enviar sua proposta de projeto, você deverá realizar um fork desse projeto no GitHub e compartilhar o mesmo com a equipe da Hent.
+Este é um projeto de exemplo feito em Ruby on Rails. Para enviar sua proposta de projeto, você deverá realizar um fork desse projeto no GitHub e compartilhá-lo com o nosso time fera da Hent.
 
 Além de compartilhar o código no GitHub, o projeto deverá ser apresentado em uma aplicação no Heroku (https://devcenter.heroku.com/articles/getting-started-with-rails6).
 
 Para mais informações sobre o framework acesse: https://guides.rubyonrails.org/
-
-## Sobre a aplicação
-
-* Ruby
-
-Preferencialmente utilizar a versão mais recente do ruby (2.7.4). Sugerimos realizar a instalação do ruby via o rbenv (https://github.com/rbenv/rbenv).
-
-
-* Database
-
- Também sugerimos usar o PostgreSQL como database porque é o que será utilizado na aplicação no Heroku, locamente, no entanto, qualquer outro banco de dados relacional pode ser utilizado. 
-
-Já existem alguns dados no arquivo: `db/seed.rb`. Para popular o banco de dados, use o comando:
-
-`rails db:seed`
-
-Mais informações em https://guides.rubyonrails.org/active_record_migrations.html#migrations-and-seed-data
 
 ## O Desafio
 
@@ -48,6 +33,7 @@ Para essa avaliação, você deve finalizar o sistema desenvolvendo os casos de 
 2. [Adicionar propriedades nas entidades existentes](https://github.com/hent-dev/full-stack-challenge#2-adicionar-propriedades-nas-entidades-existentes)
 3. [Adicionar validações a todas entidades](https://github.com/hent-dev/full-stack-challenge#3-adicionar-valida%C3%A7%C3%B5es-a-todas-entidades)
 
+Segue o detalhamento dos casos de uso:
 
 ### 1. Incluir telas para entidade `User`
 
@@ -95,10 +81,26 @@ Não pode haver mais de um usuário com o mesmo e-mail.
 _Essa validação já está implementada no sistema. Se tiver curiosidade sobre a biblioteca (gem), acesse: https://github.com/heartcombo/devise#getting-started_
 
 
+## Sobre a aplicação
+
+* Ruby
+
+Preferencialmente utilizar a versão mais recente do ruby (2.7.4). Sugerimos realizar a instalação do ruby via o rbenv (https://github.com/rbenv/rbenv).
+
+
+* Database
+
+ Também sugerimos usar o PostgreSQL como database porque é o que será utilizado na aplicação no Heroku, locamente, no entanto, qualquer outro banco de dados relacional pode ser utilizado. 
+
+Já existem alguns dados no arquivo: `db/seed.rb`. Para popular o banco de dados, use o comando:
+
+`rails db:seed`
+
+Mais informações em https://guides.rubyonrails.org/active_record_migrations.html#migrations-and-seed-data
+
 ## Considerações finais
 
 O código fonte do projeto deve ser feito totalmente em inglês.
-
 
 A rápida assimilação de um novo framework é um dos pontos avaliados nessa prova por isso apresentamos um projeto em Ruby on Rails, no entanto vamos permitir a utilização de outra linguagem para essa prova desde que:
  - Todas funcionalidades já existentes sejam atendidas
