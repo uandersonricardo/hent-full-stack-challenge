@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'lends#index'
+
   resources :lends
   resources :books
   devise_for :users

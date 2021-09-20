@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create_or_find_by(email: 'thiago@hent.com.br') do |u|
-  u.password = '123456'
-  u.password_confirmation = '123456'
+User.create_or_find_by(email: 'dev@hent.com.br') do |u|
+  u.password = '123456789'
+  u.password_confirmation = '123456789'
 end
 
 20.times do
@@ -16,5 +16,5 @@ end
 end
 
 Book.first(5).each do |book|
-  book.lents.create
+  book.lends.create
 end
