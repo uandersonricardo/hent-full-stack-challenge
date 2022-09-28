@@ -1,11 +1,24 @@
 class UsersController < ApplicationController
+  before_action :set_user, only: %i[show edit]
+
+  # GET /users or /users.json
   def index
     @users = User.all
   end
 
-  def new; end
+  # GET /users/1 or /users/1.json
+  def show
+  end
 
-  def show; end
+  def new
+  end
 
-  def edit; end
+  def edit
+  end
+  
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_user
+      @user = User.find(params[:id])
+    end
 end
