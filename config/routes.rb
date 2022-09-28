@@ -2,15 +2,17 @@
 Rails.application.routes.draw do
   root to: 'lends#index'
 
+  devise_for :users
+
   resources :lends
   resources :books
-  devise_for :users
+  resources :users, only: %i[index new show edit]
 
   devise_scope :user do
     authenticated :user do
       root 'books#index', as: :authenticated_root
     end
-  
+
     unauthenticated do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
