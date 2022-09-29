@@ -53,7 +53,7 @@
                 Devolution date
               </dt>
               <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                <%= I18n.l @lend.returned_at %>
+                <%= @lend.returned_at.present? ? (I18n.l @lend.returned_at) : "-" %>
               </dd>
             </div>
           </dl>
