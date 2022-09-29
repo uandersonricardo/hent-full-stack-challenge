@@ -17,7 +17,7 @@ end
 end
 
 Book.first(5).each do |book|
-  book.lends.create lent_at: Faker::Time.between(from: DateTime.now - 30, to: DateTime.now - 10),
+  book.lends.create borrowed_at: Faker::Time.between(from: DateTime.now - 30, to: DateTime.now - 10),
                     returned_at: Faker::Time.between(from: DateTime.now - 9, to: DateTime.now),
                     user_id: User.first.id
 end

@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2022_09_29_173754) do
     t.bigint "book_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.datetime "lent_at", null: false
+    t.datetime "borrowed_at", null: false
     t.datetime "returned_at"
     t.bigint "user_id", null: false
     t.index ["book_id"], name: "index_lends_on_book_id"
