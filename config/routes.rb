@@ -2,11 +2,11 @@
 Rails.application.routes.draw do
   root to: 'lends#index'
 
-  devise_for :users
+  devise_for :users, skip: [:registrations]
 
   resources :lends
   resources :books
-  resources :users, only: %i[index new show edit]
+  resources :users
 
   devise_scope :user do
     authenticated :user do
