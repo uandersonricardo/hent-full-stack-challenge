@@ -4,11 +4,12 @@ Rails.application.routes.draw do
 
   devise_for :users, skip: [:registrations]
 
-  resources :lends
-  resources :books
-  resources :users
-
   devise_scope :user do
+    resource :registration, as: :user_registration, only: [:new], path: '/users',
+                            path_names: { new: 'sign_up' }, controller: 'devise/registrations' do
+      post :sign_up, action: :create, as: ''
+    end
+
     authenticated :user do
       root 'books#index', as: :authenticated_root
     end
@@ -17,4 +18,8 @@ Rails.application.routes.draw do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
+
+  resources :lends
+  resources :books
+  resources :users
 end
