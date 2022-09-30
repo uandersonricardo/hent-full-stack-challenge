@@ -2,6 +2,7 @@ class Lend < ApplicationRecord
   belongs_to :book
   belongs_to :user
 
+  validates :borrowed_at, :book, :user, presence: true
   validate :borrowed_at_cannot_be_greater_or_equal_to_returned_at,
            :returned_at_cannot_be_greater_than_six_months_after_borrowed_at,
            :user_cannot_have_more_than_two_books_without_returning
