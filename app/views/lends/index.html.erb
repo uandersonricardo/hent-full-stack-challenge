@@ -23,15 +23,15 @@
                 <div class="flex">
                   <%= link_to lend, class: "group inline-flex space-x-2 truncate text-sm" do %>
                     <p class="text-gray-500 truncate group-hover:text-gray-900">
-                      <%= lend.book.name %>
+                      <%= lend.book_name %>
                     </p>
                   <% end %>
                 </div>
               </td>
               <td class="px-6 py-4 text-right whitespace-nowrap text-sm text-gray-500">
-                <%= link_to lend.user, class: "group inline-flex space-x-2 truncate text-sm" do %>
+                <%= link_to user_path(lend.user_id), class: "group inline-flex space-x-2 truncate text-sm" do %>
                   <p class="text-gray-500 truncate group-hover:text-gray-900">
-                    <%= lend.user.name %>
+                    <%= lend.user_name %>
                   </p>
                 <% end %>
               </td>

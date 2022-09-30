@@ -3,7 +3,7 @@ class LendsController < ApplicationController
 
   # GET /lends or /lends.json
   def index
-    @lends = Lend.all
+    @lends = Lend.list
   end
 
   # GET /lends/1 or /lends/1.json

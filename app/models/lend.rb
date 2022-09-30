@@ -6,6 +6,12 @@ class Lend < ApplicationRecord
            :returned_at_cannot_be_greater_than_six_months_after_borrowed_at,
            :user_cannot_have_more_than_two_books_without_returning
 
+  def self.list
+    Lend.joins(:book, :user).select("lends.*, books.name as book_name, users.name as user_name")
+  end 
+
+  private
+
   def borrowed_at_cannot_be_greater_or_equal_to_returned_at
     return if borrowed_at.blank? || returned_at.blank?
 
